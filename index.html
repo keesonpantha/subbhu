@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shubuu You Are Gorgeous</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffd1dc, #fff1eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .message {
+    position: absolute;
+    font-size: 2.8rem;
+    color: #ff4d6d;
+    font-weight: bold;
+    animation: glow 2s ease-in-out infinite;
+    z-index: 2;
+    text-align: center;
+  }
+
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #ff9aa2; }
+    50% { text-shadow: 0 0 20px #ff4d6d; }
+    100% { text-shadow: 0 0 5px #ff9aa2; }
+  }
+
+  .flower {
+    position: absolute;
+    bottom: -30px;
+    font-size: 28px;
+    animation: floatFlower linear infinite;
+    opacity: 0.9;
+  }
+
+  @keyframes floatFlower {
+    0% {
+      transform: translateY(0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-110vh) rotate(360deg) scale(1.4);
+      opacity: 0;
+    }
+  }
+
+  /* Different flowers */
+  .flower:nth-child(2) { left: 10%; animation-duration: 8s; }
+  .flower:nth-child(3) { left: 25%; animation-duration: 10s; font-size: 34px; }
+  .flower:nth-child(4) { left: 40%; animation-duration: 9s; }
+  .flower:nth-child(5) { left: 55%; animation-duration: 11s; font-size: 32px; }
+  .flower:nth-child(6) { left: 70%; animation-duration: 8.5s; }
+  .flower:nth-child(7) { left: 85%; animation-duration: 10.5s; font-size: 36px; }
+</style>
+</head>
+<body>
+
+  <div class="message">
+    Shubuu <br>You are Gorgeous
+  </div>
+
+  <div class="flower">🌸</div>
+  <div class="flower">🌼</div>
+  <div class="flower">🌺</div>
+  <div class="flower">🌷</div>
+  <div class="flower">🌸</div>
+  <div class="flower">🌼</div>
+
+</body>
+</html>
